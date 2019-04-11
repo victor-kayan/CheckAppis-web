@@ -1,0 +1,74 @@
+
+import React from 'react';
+import 'antd/dist/antd.css';
+import TableBee from '../../../../componentes/TableBee';
+
+class ListApicultor extends React.Component {
+
+  render() {
+
+    const columns = [{
+      title: 'Nome',
+      dataIndex: 'name',
+      render: text => <a href="javascript:;">{text}</a>,
+    }, {
+      title: 'Email',
+      className: 'column-money',
+      dataIndex: 'money',
+    }, {
+      title: 'Função',
+      dataIndex: 'address',
+    }, {
+      title: 'Ações',
+      dataIndex: 'address',
+    }];
+
+    const data = [{
+      key: '1',
+      name: 'John Brown',
+      money: '￥300,000.00',
+      address: 'New York No. 1 Lake Park',
+    }, {
+      key: '2',
+      name: 'Jim Green',
+      money: '￥1,256,000.00',
+      address: 'London No. 1 Lake Park',
+    }, {
+      key: '3',
+      name: 'Joe Black',
+      money: '￥120,000.00',
+      address: 'Sidney No. 1 Lake Park',
+    }, {
+      key: '4',
+      name: 'Joe Black',
+      money: '￥120,000.00',
+      address: 'Sidney No. 1 Lake Park',
+    }];
+
+    const data = [{
+      key: '1',
+      name: 'John Brown',
+      age: 32,
+      address: 'New York No. 1 Lake Park',
+    }, {
+      key: '2',
+      name: 'Joe Black',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+    }, {
+      key: '3',
+      name: 'Jim Green',
+      age: 32,
+      address: 'Sidney No. 1 Lake Park',
+    }, {
+      key: '4',
+      name: 'Jim Red',
+      age: 32,
+      address: 'London No. 2 Lake Park',
+    }];
+
+    return <TableBee columns={columns} dataSource={data} />;
+  }
+}
+
+export default ListApicultor

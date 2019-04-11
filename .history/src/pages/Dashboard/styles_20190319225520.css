@@ -1,0 +1,11 @@
+
+.logo-dashboard {
+    width: 100vw;
+    height: 60px;
+    background-image: url('../../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 7vw 7vh;
+    /* margin: 20px; */
+    align-content: center;
+    align-items: center
+}

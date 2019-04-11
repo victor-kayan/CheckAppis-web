@@ -1,0 +1,9 @@
+
+.logo-dashboard {
+    width: 100%;
+    height: 100px;
+    background-image: url('https://lh3.googleusercontent.com/-jg5ISK501l4/XIvs20w2ICI/AAAAAAAAAD0/uE_pVFkfvVMXybTzYtBj4VkHqxsmkLt4ACK8BGAs/s0/drawer-cover.png');
+    background-repeat: no-repeat;
+    background-size: 10vw 10vh;
+    /* margin: 20px; */
+}

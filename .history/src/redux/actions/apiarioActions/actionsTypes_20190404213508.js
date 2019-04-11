@@ -1,0 +1,2 @@
+export const GET_ALL_APIARIOS = 'GET_ALL_APIARIOS';
+export const LOADING_APIARIO = 'LOADING_APIARIO';

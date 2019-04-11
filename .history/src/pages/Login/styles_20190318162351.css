@@ -1,0 +1,33 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://cdn.hipwallpaper.com/i/67/28/t0XAfu.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.box {
+    width: 25vw;
+    height: auto;
+    min-width: 20vw !important;
+    min-width: 300px !important;
+    background: #FAF7F7;
+    padding: 40px;
+    border-radius: 5px;
+    border-bottom: 1px solid #ebedf0;
+    filter:alpha(opacity=50);
+    -webkit-opacity:0.9;
+}
+.button {
+    width: 100%;
+    margin-top: 15px
+}
+.logo {
+    max-width: 80px;
+    margin: 10px
+}
+
