@@ -7,7 +7,7 @@ import {
 
 const FooterBee = () => {
     return (
-        <Layout.Footer style={{ position: 'fixed', textAlign: 'center', width: '80%', bottom: '0px' }}>
+        <Layout.Footer style={{ textAlign: 'center', width: '80%', bottom: '0px' }}>
             <strong>Bee<strong style={{ color: '#FFD915' }}>Check</strong>  ©2019 copyright</strong>
         </Layout.Footer>
     )
