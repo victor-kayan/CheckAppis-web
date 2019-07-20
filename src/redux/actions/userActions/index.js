@@ -1,9 +1,8 @@
-import { LOGIN, LOADING, LOGOUT } from "./actionsTypes";
-import Api from "../../../services/api"
+import { LOGIN, LOADING, LOGOUT, LOGIN_FACEBOOK } from "./actionsTypes";
+import Api from "../../../services/api";
 import { uris } from "../../../assets";
 
 export const login = ({ email, password }) => {
-
   return dispatch => {
     dispatch({
       type: LOGIN,
@@ -14,12 +13,13 @@ export const login = ({ email, password }) => {
 
     Api.post(uris.LOGIN, { email, password })
       .then(response => {
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("userName", response.data.user.name);
+        localStorage.setItem("foto", response.data.user.foto);
 
-        localStorage.setItem('token', response.data.token)
-        localStorage.setItem('userName', response.data.user.name)
-        localStorage.setItem('foto', response.data.user.foto)
-
-        Api.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
+        Api.defaults.headers.common[
+          "Authorization"
+        ] = `Bearer ${localStorage.getItem("token")}`;
 
         dispatch({
           type: LOGIN,
@@ -27,8 +27,8 @@ export const login = ({ email, password }) => {
             user: response.data.user,
             loading: false,
             logged: true,
-            token: response.data.token,
-          },
+            token: response.data.token
+          }
         });
       })
       .catch(error => {
@@ -41,53 +41,49 @@ export const login = ({ email, password }) => {
           payload: {
             loading: false,
             logged: false,
-            code: error.response.status,
+            code: error.response.status
           }
         });
       });
   };
 };
 
-export const loginFacebook = ({ email, password }) => {
-
+export const loginFacebook = ({ token }) => {
   return dispatch => {
     dispatch({
-      type: LOGIN,
+      type: LOGIN_FACEBOOK,
       payload: {
         loadingFacebook: true
       }
     });
 
-    Api.post(uris.LOGIN, { email, password })
+    Api.post(uris.LOGIN_FACEBOOK, { token })
       .then(response => {
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("userName", response.data.user.name);
+        localStorage.setItem("foto", response.data.user.foto);
 
-        localStorage.setItem('token', response.data.token)
-        localStorage.setItem('userName', response.data.user.name)
-        localStorage.setItem('foto', response.data.user.foto)
-
-        Api.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
+        Api.defaults.headers.common[
+          "Authorization"
+        ] = `Bearer ${localStorage.getItem("token")}`;
 
         dispatch({
-          type: LOGIN,
+          type: LOGIN_FACEBOOK,
           payload: {
             user: response.data.user,
-            loading: false,
+            loadingFacebook: false,
             logged: true,
-            token: response.data.token,
-          },
+            token: response.data.token
+          }
         });
       })
       .catch(error => {
-        if (error.response) {
-          console.log(error.response.data);
-          console.log(error.response.status);
-        }
         dispatch({
           type: LOADING,
           payload: {
-            loading: false,
-            logged: false,
-            code: error.response.status,
+            loadingFacebook: false,
+            logged: false
+            //code: error.response.status,
           }
         });
       });
@@ -95,11 +91,9 @@ export const loginFacebook = ({ email, password }) => {
 };
 
 export const logout = () => {
-  
-  localStorage.removeItem('token');
+  localStorage.removeItem("token");
 
   return dispatch => {
-
     dispatch({
       type: LOADING,
       payload: {
@@ -121,11 +115,10 @@ export const logout = () => {
         });
       })
       .catch(error => {
-        console.log(error);
         dispatch({
           type: LOADING,
           payload: {
-            loading: false,
+            loading: false
           }
         });
       });

@@ -6,7 +6,7 @@ const initialState = {
   loading: false,
   logged: false,
   code: null,
-  message: null
+  message: null,
 };
 export const ApicultorReducer = (state = initialState, action) => {
 
@@ -17,7 +17,6 @@ export const ApicultorReducer = (state = initialState, action) => {
         list_apicultor: action.payload.list_apicultor,
         loading: action.payload.loading,
         code: action.payload.code,
-        message: action.payload.message,
       };
 
     case SAVE_APICULTOR:
@@ -40,7 +39,6 @@ export const ApicultorReducer = (state = initialState, action) => {
         loading: action.payload.loading,
         code: action.payload.code,
         apicultor: action.payload.apicultor,
-        message: action.payload.message
       };
     case DELETE_APICULTOR:
       return {
@@ -54,7 +52,6 @@ export const ApicultorReducer = (state = initialState, action) => {
         ...state,
         loading: action.payload.loading,
         code: action.payload.code,
-        message: action.payload.message
       };
 
     default:
