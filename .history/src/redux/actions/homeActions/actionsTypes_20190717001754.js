@@ -1,4 +1,0 @@
-export const GET_ALL_APIARIOS = 'GET_ALL_APIARIOS';
-export const LOADING_APIARIO = 'LOADING_APIARIO';
-export const SAVE_APIARIO = 'SAVE_APIARIO';
-export const GET_CIDADES_UF = 'GET_CIDADES_UF';

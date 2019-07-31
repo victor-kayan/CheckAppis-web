@@ -22,8 +22,8 @@
     padding: 40px;
     border-radius: 5px;
     border-bottom: px solid #ebedf0;
-    filter:alpha(opacity=50);
-    -webkit-opacity:0.9;
+    /* filter:alpha(opacity=50); */
+    /* -webkit-opacity:0.9; */
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25pt;
