@@ -105,7 +105,7 @@ class FormApicultor extends React.Component {
                     }
                     mask="(11) 11111-1111"
                     name="card"
-                    placeholder="Ex.: (84) 99999-9999"
+                    placeholder="(84) 99999-9999"
                   />
                 )}
               </Form.Item>
@@ -136,7 +136,7 @@ class FormApicultor extends React.Component {
                       <Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />
                     }
                     type="password"
-                    placeholder="Ex.: beecheck"
+                    placeholder="beecheck"
                   />
                 )}
               </Form.Item>
@@ -247,7 +247,7 @@ class FormApicultor extends React.Component {
                 })(
                   <Select
                     showSearch
-                    placeholder="Ex.: Portalegre"
+                    placeholder="Portalegre"
                     optionFilterProp="children"
                     onChange={null}
                     onFocus={this.props.onFocus}
@@ -294,7 +294,7 @@ class FormApicultor extends React.Component {
                     }
                     onBlur={this.handleConfirmBlur}
                     type="text"
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Sitio Belo Monte"
                   />
                 )}
               </Form.Item>

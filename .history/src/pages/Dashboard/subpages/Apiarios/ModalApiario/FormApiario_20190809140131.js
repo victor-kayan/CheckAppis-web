@@ -90,7 +90,7 @@ class FormApiario extends React.Component {
                 })(
                   <Select
                     showSearch
-                    placeholder="Ex.: Claudio Rodrigo"
+                    placeholder="Ex.: Francisco Jośe"
                     optionFilterProp="children"
                     onFocus={this.props.onFocus}
                     onSearch={this.props.onSearch}
@@ -137,7 +137,7 @@ class FormApiario extends React.Component {
                         style={{ color: "rgba(0,0,0,.25)" }}
                       />
                     }
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Endereço"
                   />
                 )}
               </Form.Item>

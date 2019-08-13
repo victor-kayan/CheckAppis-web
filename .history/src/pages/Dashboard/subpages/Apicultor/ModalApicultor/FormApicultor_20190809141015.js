@@ -294,7 +294,7 @@ class FormApicultor extends React.Component {
                     }
                     onBlur={this.handleConfirmBlur}
                     type="text"
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Sitio Belo Monte"
                   />
                 )}
               </Form.Item>

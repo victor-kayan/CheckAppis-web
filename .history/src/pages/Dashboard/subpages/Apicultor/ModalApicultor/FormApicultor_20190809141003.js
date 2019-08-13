@@ -247,7 +247,7 @@ class FormApicultor extends React.Component {
                 })(
                   <Select
                     showSearch
-                    placeholder="Ex.: Portalegre"
+                    placeholder="Portalegre"
                     optionFilterProp="children"
                     onChange={null}
                     onFocus={this.props.onFocus}
@@ -294,7 +294,7 @@ class FormApicultor extends React.Component {
                     }
                     onBlur={this.handleConfirmBlur}
                     type="text"
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Sitio Belo Monte"
                   />
                 )}
               </Form.Item>

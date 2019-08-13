@@ -115,19 +115,6 @@ class IntevencaoApiario extends React.Component {
         icon: <Icon type="smile" style={{ color: colors.COR_PRYMARY }} />
       });
       this.setState({ isClicouButtonDelete: false });
-    } else if (nextProps.code !== 204 && this.state.isClicouButtonDelete) {
-      notification.open({
-        message: "Erro ao executar essa operação",
-        description: "Por favor tente novamente",
-        icon: (
-          <Icon
-            type="smile"
-            rotate={180}
-            style={{ color: colors.COR_RED_ERROR }}
-          />
-        )
-      });
-      this.setState({ isClicouButtonDelete: false });
     }
     if (
       !lodash.isEqual(this.props.list_apicultor, nextProps.intervencoesApiarios)
@@ -259,10 +246,7 @@ function mapStateToProps(state, props) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    { getAllApiariosIntervencoes, deleteIntervencaoApiario },
-    dispatch
-  );
+  return bindActionCreators({ getAllApiariosIntervencoes, deleteIntervencaoApiario }, dispatch);
 }
 
 export default connect(

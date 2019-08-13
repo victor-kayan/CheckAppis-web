@@ -17,6 +17,10 @@ class ModalDetalhesColmeia extends React.Component {
     const { colmeias, loadingColmeia } = this.props || [];
     const { Meta } = Card;
 
+    console.log("====================================");
+    console.log("Loading", colmeias.length);
+    console.log("====================================");
+
     return (
       <div>
         <Modal

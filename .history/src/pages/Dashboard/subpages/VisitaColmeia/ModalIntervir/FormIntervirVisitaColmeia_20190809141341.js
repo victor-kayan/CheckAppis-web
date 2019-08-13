@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Row, Col, DatePicker } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 
-class FormIntervirVisitaApiario extends React.Component {
+class FormIntervirVisitaColmeia extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,7 +21,7 @@ class FormIntervirVisitaApiario extends React.Component {
                   rules: [
                     {
                       required: true,
-                      message: "Por favor informe uma iternvenção"
+                      message: "Por favor informe uma itervenção"
                     },
                     {
                       min: 5,
@@ -29,10 +29,10 @@ class FormIntervirVisitaApiario extends React.Component {
                     },
                     {
                       max: 50,
-                      message: "O campo tem que ter no máximo 100 caracteres"
+                      message: "O campo tem que ter no máximo 50 caracteres"
                     }
                   ]
-                })(<TextArea rows={2} placeholder="Ex.: Colocar água 3 vezes ao dia" />)}
+                })(<TextArea rows={2} placeholder="Ex.: " />)}
               </Form.Item>
             </Col>
           </Row>
@@ -49,7 +49,7 @@ class FormIntervirVisitaApiario extends React.Component {
                 })(
                   <DatePicker
                     onChange={this.onChangeDate}
-                    placeholder="Ex.: 24-10-2019"
+                    placeholder="Data Início"
                     defaultPickerValue={null}
                   />
                 )}
@@ -67,7 +67,7 @@ class FormIntervirVisitaApiario extends React.Component {
                 })(
                   <DatePicker
                     onChange={this.onChangeDate}
-                    placeholder="Ex.: 24-11-2019"
+                    placeholder="Data Fim"
                     defaultPickerValue={null}
                   />
                 )}
@@ -81,7 +81,7 @@ class FormIntervirVisitaApiario extends React.Component {
 }
 
 const WrappedNormalLoginForm = Form.create({ name: "normal_login" })(
-  FormIntervirVisitaApiario
+  FormIntervirVisitaColmeia
 );
 
 export default WrappedNormalLoginForm;

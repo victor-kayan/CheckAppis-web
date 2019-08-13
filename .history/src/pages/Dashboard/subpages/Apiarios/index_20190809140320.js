@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Layout, Row, Col, Button, Alert } from "antd";
 import BreadcrumbBee from "../../../../componentes/BreadcrumBee";
 import Mapa from "../../../../componentes/Mapa";
+import { colors } from "../../../../assets";
 
 class IndexApiario extends Component {
   constructor(props) {

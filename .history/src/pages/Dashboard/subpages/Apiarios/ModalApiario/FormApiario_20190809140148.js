@@ -137,7 +137,7 @@ class FormApiario extends React.Component {
                         style={{ color: "rgba(0,0,0,.25)" }}
                       />
                     }
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Endereço"
                   />
                 )}
               </Form.Item>

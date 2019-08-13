@@ -67,7 +67,7 @@ class FormIntervirVisitaApiario extends React.Component {
                 })(
                   <DatePicker
                     onChange={this.onChangeDate}
-                    placeholder="Ex.: 24-11-2019"
+                    placeholder="Data Fim"
                     defaultPickerValue={null}
                   />
                 )}

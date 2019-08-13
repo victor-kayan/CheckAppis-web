@@ -41,7 +41,7 @@ class FormApiario extends React.Component {
                     prefix={
                       <Icon type="edit" style={{ color: "rgba(0,0,0,.25)" }} />
                     }
-                    placeholder="Ex.: Apiário IFRN"
+                    placeholder="Ex.: Apiário Bela Flora"
                   />
                 )}
               </Form.Item>
@@ -70,7 +70,7 @@ class FormApiario extends React.Component {
                     prefix={
                       <Icon type="edit" style={{ color: "rgba(0,0,0,.25)" }} />
                     }
-                    placeholder="Ex.: Apiário Respónsavel por produzir um mel de qualidade"
+                    placeholder="Descrição"
                   />
                 )}
               </Form.Item>
@@ -90,7 +90,7 @@ class FormApiario extends React.Component {
                 })(
                   <Select
                     showSearch
-                    placeholder="Ex.: Claudio Rodrigo"
+                    placeholder="Selecione a cidade"
                     optionFilterProp="children"
                     onFocus={this.props.onFocus}
                     onSearch={this.props.onSearch}
@@ -137,7 +137,7 @@ class FormApiario extends React.Component {
                         style={{ color: "rgba(0,0,0,.25)" }}
                       />
                     }
-                    placeholder="Ex.: Sitio Belo Monte"
+                    placeholder="Endereço"
                   />
                 )}
               </Form.Item>
