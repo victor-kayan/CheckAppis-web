@@ -19,9 +19,9 @@ const uris = {
 
   DELETE_APICULTOR: "user/",
   DELETE_APIARIO: "apiario/",
-  DELETE_VISITA_APIARIO: "apiario/visitas/",
-  DELETE_INTERVENCAO_APIARIO: "intervencao/apiario/",
-  DELETE_INTERVENCAO_COLMEIA: "intervencao/colmeia/",
+  DELETE_VISITA_APIARIO: 'apiario/visitas/',
+  DELETE_INTERVENCAO_APIARIO: 'intervencao/apiario/',
+  DELETE_INTERVENCAO_COLMEIA: 'intervencao/colmeia/',
 
   DETALHES_APIARIO: "apiario/",
 

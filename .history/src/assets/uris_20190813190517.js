@@ -1,6 +1,6 @@
 const uris = {
-  DOMINIO: "http://192.168.200.237",
-  BASE_URL: "http://192.168.200.237/api/",
+  DOMINIO: "http://bee-check-api.herokuapp.com/",
+  BASE_URL: "http://bee-check-api.herokuapp.com//api/",
 
   LOGIN: "auth/login/tecnico",
   LOGIN_FACEBOOK: "auth/login/tecnico/facebook",

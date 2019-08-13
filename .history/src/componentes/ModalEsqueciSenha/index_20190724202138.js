@@ -27,8 +27,6 @@ class ModalEsqueciSenha extends React.Component {
                     visible={this.state.modalVisible}
                     onOk={() => this.setModalVisible(false)}
                     onCancel={() => this.setModalVisible(false)}
-                    okText="Ok"
-                    cancelText="Cancelar"
                 >
                     <p>Insira seu email e nós enviaremos um email para você redefinir sua senha</p>
 
