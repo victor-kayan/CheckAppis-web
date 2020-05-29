@@ -39,10 +39,10 @@ const uris = {
   GET_ALL_COLMEIAS: "colmeias-por-apiario/",
 
   GOOGLE_MAPS_URI:
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyA3byNpUcao4ZQud-zGppXCjHSZVOaoygI&v=3.exp&libraries=geometry,drawing,places",
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAPSboSxwnSqHBZxKv7-ZOJoa9_8crEVJg&v=3.exp&libraries=geometry,drawing,places",
 
   GOOGLE_MAPS_GEOCODE_URL:
-    "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA3byNpUcao4ZQud-zGppXCjHSZVOaoygI&address="
+    "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyAPSboSxwnSqHBZxKv7-ZOJoa9_8crEVJg&address="
 };
 
 export default uris;
