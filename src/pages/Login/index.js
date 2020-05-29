@@ -43,7 +43,7 @@ class Login extends Component {
       if (nextProps.code >= 500) {
         this.setState({
           alertVisible: true,
-          message: "Aguarde!! Estamos tendo problemas no servidor"
+          message: "Por favor, aguarde. Estamos com problemas no servidor"
         });
       } else {
         this.setState({
