@@ -38,5 +38,5 @@
     "react-redux": "^5.1.1",
     "redux": "^3.7.2"
   },
-  "homepage": "http://bee-check-api.herokuapp.com/"
+  "homepage": "http://bee-check.herokuapp.com/"
 }
